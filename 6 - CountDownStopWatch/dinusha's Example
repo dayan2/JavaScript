@@ -1,0 +1,22 @@
+<div id="time">ddd</div>
+<script> 
+ var seconds=0 
+ var minutes=1 
+ time.innerHTML = "My new text!";
+function display(){ 
+ if (seconds<=0){ 
+    seconds=59 
+    minutes-=1 
+ } 
+ if (minutes<=-1){ 
+    seconds=0 
+    minutes+=1 
+ } 
+ else 
+    seconds-=1 
+	time.innerHTML = minutes+"."+seconds ;
+    setTimeout("display()",1000) 
+} 
+display() 
+
+</script> 
